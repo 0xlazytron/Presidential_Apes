@@ -1,3 +1,5 @@
-# sandbox
-Created with CodeSandbox
-https://r3byv.csb.app/
+# President Apes
+Created with Typescript
+Phantom wallet
+
+www.presidentialape.io
