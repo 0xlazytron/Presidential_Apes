@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Rose', cursive;
+}
+
+body {
+    min-height: 100vh;
+    color: #ffffff;
+    position: relative;
+    background: url('./images/home-bg.svg'), url('./images/home-bg.svg');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-position: bottom -250px left -250px, bottom -250px right -250px;
+}
+
+.container {
+    max-width: 1323px;
+    margin: 0 auto;
+    padding: 0 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 14px 25px;
+    border-radius: 50px;
+    background-color: #FFAE01;
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+button:hover {
+    background-color: #ca8c06;
+}
+
+#centerWallet {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+
+.header {
+    padding: 15px 0;
+    .container {
+        display: flex;
+        align-items: center;
+        a.brand-logo {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 50px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            span {
+                color: #FFAE01;
+            }
+        }
+        .social-btns {
+            margin-left: auto;
+            a {
+                transition: 0.3s all;
+                margin: 0 5px;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .connect-btn {
+            margin-left: 34px;
+        }
+    }
+}
+
+.hero-section {
+    padding: 100px 0;
+    .container {
+        display: flex;
+        gap: 100px;
+        .hero-thumbnail {
+            width: calc(50% - 50px);
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .hero-content {
+            width: calc(50% - 50px);
+            h1 {
+                font-weight: bold;
+                font-size: 100px;
+                line-height: 1;
+                span {
+                    color: #FFAE01;
+                }
+            }
+            h4 {
+                font-weight: 300;
+                font-size: 36px;
+                line-height: 45px;
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+            form {
+                margin-top: 40px;
+                .price-input {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .button {
+                        display: block;
+                        background-color: #ffffff;
+                        height: 55px;
+                        width: 55px;
+                        min-width: 55px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: none;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                    input {
+                        background-color: #282828;
+                        border-radius: 50px;
+                        border: none;
+                        outline: none;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: 24px;
+                        line-height: 1.23;
+                        height: 58px;
+                        max-width: calc(100% - 114px);
+                    }
+                }
+                &>button {
+                    margin-top: 55px;
+                }
+            }
+            p.mint-price {
+                color: #FFAE01;
+                font-weight: 300;
+                font-size: 21.7011px;
+                line-height: 27px;
+                margin-top: 30px;
+            }
+            strong.date {
+                color: #FFAE01;
+                font-size: 21.7011px;
+                line-height: 27px;
+                margin-top: 5px;
+                span {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1200px) {
+    h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media(max-width:1024px) {
+    h1 {
+        font-size: 50px !important;
+    }
+    h4 {
+        font-size: 25px !important;
+    }
+    .hero-section {
+        .container {
+            gap: 30px;
+            .hero-thumbnail {
+                width: calc(100% - 15px);
+            }
+            .hero-content {
+                width: calc(100% - 15px);
+            }
+        }
+    }
+}
+
+@media(max-width:780px) {
+    .container {
+        max-width: 600px;
+    }
+    .header {
+        .container {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .brand-logo {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .social-btns {
+                margin: 0;
+            }
+            .connect-btn {
+                margin-left: 20px;
+            }
+        }
+    }
+    .hero-section {
+        padding: 40px 0;
+        .container {
+            flex-direction: column;
+            .hero-thumbnail {
+                width: 100%;
+            }
+            .hero-content {
+                width: 100%;
+            }
+        }
+    }
+    .price-input .button {
+        height: 35px !important;
+        width: 35px !important;
+        min-width: 35px !important;
+    }
+    .hero-content form {
+        margin-top: 15px !important;
+    }
+    .hero-content form button {
+        margin-top: 30px !important;
+    }
+    .price-input input {
+        height: 43px !important;
+    }
+}
+
+@media(max-width:430px) {
+    h1 {
+        font-size: 40px !important;
+    }
+    .btn {
+        font-size: 20px !important;
+        padding: 10px 15px;
+    }
+    a.brand-logo {
+        font-size: 30px !important;
+        line-height: 1 !important;
+    }
+}
